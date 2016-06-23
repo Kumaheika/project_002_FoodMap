@@ -8,6 +8,8 @@
 ### 建立目的
 結合 google map 的 API 來建立個人的美食地圖，方便日後查看
 
+### step 01
+先到 google API 申請一個 API憑證，連結網址[GoogleAPIs](https://console.developers.google.com/apis/credentials?project=foodmap-1350)
 ---
 
 ### API
