@@ -17,3 +17,4 @@
 
 ##### Reference
 - [取得開發者API](https://blog.gtwang.org/programming/obtaining-api-key-from-google-developers-console/)
+- [w3cschool - googl map教學](http://www.w3schools.com/googleapi/google_maps_basic.asp)
