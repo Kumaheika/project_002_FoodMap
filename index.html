@@ -3,25 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>美食地圖 Beta</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- 引入 Google Maps API -->
-<<<<<<< HEAD
   <script src="js/jquery-2.2.4.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRHBNAVZ3wEM9oL7PkQUAv8CI0BrT4-8E">
-type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRHBNAVZ3wEM9oL7PkQUAv8CI0BrT4-8E"></script>
+  <!-- 控制 Google Maps的 JavaScript -->
   <script type="text/javascript" src="js/map_point.js"></script>
-  <!-- 控制 Google Maps的 JavaScript -->
-  <!-- <script type="text/javascript" src="js/map.js"></script> -->
-=======
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRHBNAVZ3wEM9oL7PkQUAv8CI0BrT4-8E">
-type="text/javascript"></script>
-  <!-- 控制 Google Maps的 JavaScript -->
-  <script type="text/javascript" src="js/map.js"></script>
->>>>>>> 21cee949fd1855fa7f918232ba8d5c209c0ad085
 </head>
 <body>
-  <!-- Google Map 顯示的位置 -->
-  <div id="map-canvas"></div>
-</body>
+  <div class="warp">
+    <nav class="nav_area">
+      <div class="container">
 
+        <div class="nav_logo">
+          <a href="index.html">美食地圖</a>
+        </div>
+        <div class="nav_toggle_btn">
+          <a href="#">≡</a>
+        </div>
+        <div class="nav_menu">
+          <ul class="nav_menu_ul">
+            <li><a href="#">關於美食地圖</a></li>
+            <li><a href="#">地點搜尋</a></li>
+            <li><a href="#">Github</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Google Map 顯示的位置 -->
+    <div id="map-canvas"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Kuma studio Design © 2016</p>
+      </div>
+    </footer>
+
+
+  </div>
+</body>
 </html>
