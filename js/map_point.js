@@ -10,7 +10,7 @@ function addMarker() {
     {
       url: JsonURL,
       type: 'GET',
-      dataType: 'json',
+      dataType: 'jsonp',
       success: function (data) {
         var first = true;
         var map;
