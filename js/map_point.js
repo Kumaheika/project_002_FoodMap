@@ -4,13 +4,13 @@ $(document).ready(addMarker);
 //Ajax json 資料
 function addMarker() {
   //open sources
-  var JsonURL = "http://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AV&CaseNo2=2&FileType=1&Lang=C&FolderType=";
+  var JsonURL = "https://data.kaohsiung.gov.tw/Opendata/DownLoad.aspx?Type=2&CaseNo1=AV&CaseNo2=2&FileType=1&Lang=C&FolderType=";
 
   $.ajax(
     {
       url: JsonURL,
       type: 'GET',
-      dataType: 'jsonp',
+      dataType: 'json',
       success: function (data) {
         var first = true;
         var map;
