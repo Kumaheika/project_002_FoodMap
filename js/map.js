@@ -1,7 +1,5 @@
 // 非同步載入（Asynchronously Loading）API
 var myCenter = { lat: 22.6396626, lng: 120.3005136}; //定位點：高雄捷運站
-var pointer = [{ lat: 22.6396626, lng: 120.3005136},{ lat: 22.5396626, lng: 120.4005136}]; //定位點：高雄捷運站
-
 function initialize() {
   //決定你 Google 地圖的中心點位置和縮放大小
   var mapOptions = {
@@ -16,7 +14,7 @@ function initialize() {
   //建立map上的 marker
   var marker = new google.maps.Marker({
     position: myCenter, //火車站位置
-    animation: google.maps.Animation.BOUNCE, //讓 marker 有動畫
+    animation:google.maps.Animation.BOUNCE, //讓 marker 有動畫
     icon:'images/pinkball.png' //改變 marker 的樣式(圖為相對路徑)
   });
   //maker 放到 map 上
