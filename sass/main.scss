@@ -1,6 +1,7 @@
 @import "compass/css3";
 * {
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, 微軟正黑體, sans-serif;
 }
 html {
   width: 100%;
@@ -8,7 +9,6 @@ html {
   background: #ffc600 url('../images/bg.png');
   color: #444;
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, 微軟正黑體, sans-serif;
 }
 a {
   text-decoration: none;
@@ -88,8 +88,31 @@ a {
 }
 
 .footer {
-  height: 120px;
+  min-height: 120px;
   background: #590d03;
+  text-align: center;
+  padding: 20px 0;
+  .footer_icon {
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 5px;
+    @include border-radius(50%);
+    &:hover {
+      color: #FFF;
+    }
+  }
+  ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+  }
   p {
     color: #FFF;
     text-align: center;
