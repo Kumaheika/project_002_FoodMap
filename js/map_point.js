@@ -22,16 +22,16 @@ function addMarker() {
             var latlng = new google.maps.LatLng(data[i].Py, data[i].Px);
 
             // 給google map 的 中心點資訊
-            var myOptions = {
+            var myMapProp = {
                 zoom: 16,
                 center: latlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
             // 建立地圖
-            map = new google.maps.Map($("#map-canvas")[0], myOptions);
+            map = new google.maps.Map($("#map-canvas")[0], myMapProp);
             first = false;
-          }
+          } //== if結束
 
           var myLatlng = new google.maps.LatLng(data[i].Py, data[i].Px);
           var info = data[i].Name;
