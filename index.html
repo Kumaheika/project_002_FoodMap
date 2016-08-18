@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>美食地圖 Beta</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- 引入 Google Maps API -->
   <script src="js/jquery-2.2.4.min.js"></script>
@@ -15,11 +16,12 @@
   <div class="warp">
 
 
+    <!-- Nav -->
     <nav class="nav_area">
       <div class="container">
-
         <div class="nav_logo">
-          <a href="index.html">美食地圖</a>
+          <a href="index.html">美食地圖
+          </a>
         </div>
         <div class="nav_toggle_btn">
           <a href="#">≡</a>
@@ -35,16 +37,37 @@
     </nav>
 
 
+    <!-- Banner -->
+    <div class="banner">
+
+      <div class="banner_infor">
+        <h2 class="title black">關於美食地圖</h2>
+        <p>美食地圖是用來練習應用 googleAPI 的一個小專案，方便用來查詢目前有的高雄美食資訊。</p>
+        <input type="text" id="search" class="map_search" placeholder="請輸入關鍵字">
+      </div>
+    </div>
+
+
     <!-- Google Map 顯示的位置 -->
-    <div id="map-canvas"></div>
+    <div class="mpa container">
+      <h2 class="title">美食熱搜</h2>
+      <div id="map-canvas"></div>
+    </div>
 
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <ul>
-          <li><a class="footer_icon" href="#"><i>github</i></a></li>
-          <li><a class="footer_icon" href="#"><i>in</i></a></li>
-          <li><a class="footer_icon" href="#"><i>mail</i></a></li>
+          <li><a class="footer_icon" href="https://github.com/Kumaheika">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a></li>
+          <li><a class="footer_icon" href="https://www.linkedin.com/in/kuma-wu-4b8019a9?trk=hp-identity-photo">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a></li>
+          <li><a class="footer_icon" href="mailto:w87502047@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a></li>
         </ul>
         <p>Kuma studio Design © 2016</p>
       </div>
