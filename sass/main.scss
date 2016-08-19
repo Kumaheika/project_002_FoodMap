@@ -1,4 +1,5 @@
 @import "compass/css3";
+@import "card";
 * {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Arial, 微軟正黑體, sans-serif;
@@ -71,8 +72,7 @@ a {
   width: 100%;
   height: 80px;
   margin: 0 auto;
-  // background: rgba(0, 0, 0, .1);
-  // border-bottom: 1px solid rgba(0, 0, 0, .3);
+  @include transition(.5s all);
   .nav_logo {
     float: left;
     a {
@@ -126,6 +126,20 @@ a {
       }
     }
   }
+  &.fixed {
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    height: 80px;
+    // @include animation(.5s movein);
+  }
+  // @keyframes movein {
+  //   from {top: -80px;}
+  //   to {top: 0px;}
+  // }
+  // @-webkit-@keyframes movein {
+  //   from {top: -80px;}
+  //   to {top: 0px;}
+  // }
 }
 
 
@@ -136,6 +150,7 @@ a {
   height: 100vh;
   background: url("../images/event_04.jpg") center center;
   background-size: cover;
+  background-attachment: fixed;
   &::after {
     content: ' ';
     display: block;
@@ -217,6 +232,6 @@ a {
   width: 100%;
   height: 70vh;
   margin: 0 auto;
-  background: #FFF;
-  border: 4px solid #FFF;
+  background: #e1e1e1;
+  border: 4px solid #e1e1e1;
 }

@@ -11,6 +11,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRHBNAVZ3wEM9oL7PkQUAv8CI0BrT4-8E"></script>
   <!-- 控制 Google Maps的 JavaScript -->
   <script type="text/javascript" src="js/map_point.js"></script>
+  <script type="text/javascript" src="js/effect.js"></script>
 </head>
 <body>
   <div class="warp">
@@ -49,9 +50,33 @@
 
 
     <!-- Google Map 顯示的位置 -->
-    <div class="mpa container">
+    <div class="container mpa">
       <h2 class="title">美食熱搜</h2>
       <div id="map-canvas"></div>
+    </div>
+
+
+    <!-- Google Map 顯示的位置 -->
+    <div class="container foodmap">
+      <h2 class="title">美食列表</h2>
+
+      <div class="food_list">
+        <div class="card">
+          <div class="card_head">
+            <h3 class="card_title">興隆居</h3>
+            <div class="card_infor">
+              <p class="Add">高雄市前金區六合二路186號</p>
+              <p class="Opentime">每日03:00-11:00</p>
+            </div>
+            <img src="http://khh.travel/FileArtPic.ashx?id=316&w=1280&h=960" alt="興隆居">
+          </div>
+          <div class="card_infor">
+            <p class="Description">一大早來到興隆居，真的是人聲鼎沸，創立於1970年的興隆居，以提供「清晨的第一道美食」自居，每天早上熱騰騰出爐的各種美食，的確是挑動每個人的味蕾。在琳瑯滿目的選擇中，最具人氣的就是湯包，使用梨山的高山高麗菜，以及半肥半瘦的胛心肉，加入蔬菜豬大骨高湯，現拌、現包、現蒸，一口咬下鮮甜的湯汁溢出，讓人回味無窮!</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
 
