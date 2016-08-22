@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>美食地圖 Beta</title>
+  <title>Food Map GO!! (Beta)</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -14,8 +14,7 @@
   <script type="text/javascript" src="js/effect.js"></script>
 </head>
 <body>
-  <div class="warp">
-
+  <div class="warp" id="se01">
 
     <!-- Nav -->
     <nav class="nav_area">
@@ -29,8 +28,9 @@
         </div>
         <div class="nav_menu">
           <ul class="nav_menu_ul">
-            <li><a href="#">關於美食地圖</a></li>
-            <li><a href="#">美食熱搜</a></li>
+            <li><a class="navBTN" href="#" data-target="#se01">關於Food Map GO!!</a></li>
+            <li><a class="navBTN" href="#" data-target="#se02">美食地圖</a></li>
+            <li><a class="navBTN" href="#" data-target="#se03">美食列表</a></li>
             <li><a href="https://github.com/Kumaheika/project_002_FoodMap">Github</a></li>
           </ul>
         </div>
@@ -42,7 +42,7 @@
     <div class="banner">
 
       <div class="banner_infor">
-        <h2 class="title black">關於美食地圖</h2>
+        <h2 class="title black">關於Food Map GO!!</h2>
         <p>美食地圖是用來練習應用 googleAPI 的一個小專案，方便用來查詢目前有的高雄美食資訊。</p>
         <input type="text" id="search" class="map_search" placeholder="請輸入關鍵字">
       </div>
@@ -51,19 +51,20 @@
 
     <!-- Google Map 顯示的位置 -->
     <div class="container mpa">
-      <h2 class="title">美食熱搜</h2>
+      <h2 id="se02" class="title">美食地圖</h2>
       <div id="map-canvas"></div>
     </div>
 
 
     <!-- Google Map 顯示的位置 -->
     <div class="container foodmap">
-      <h2 class="title">美食列表</h2>
+      <h2 id="se03" class="title">美食列表</h2>
 
       <div class="food_list">
+
         <div class="card">
           <div class="card_head">
-            <h3 class="card_title">興隆居</h3>
+            <h3 class="Name">興隆居</h3>
             <div class="card_infor">
               <p class="Add">高雄市前金區六合二路186號</p>
               <p class="Opentime">每日03:00-11:00</p>
@@ -74,7 +75,8 @@
             <p class="Description">一大早來到興隆居，真的是人聲鼎沸，創立於1970年的興隆居，以提供「清晨的第一道美食」自居，每天早上熱騰騰出爐的各種美食，的確是挑動每個人的味蕾。在琳瑯滿目的選擇中，最具人氣的就是湯包，使用梨山的高山高麗菜，以及半肥半瘦的胛心肉，加入蔬菜豬大骨高湯，現拌、現包、現蒸，一口咬下鮮甜的湯汁溢出，讓人回味無窮!</p>
           </div>
         </div>
-      </div>
+
+      </div><!-- food_list -->
 
 
     </div>
