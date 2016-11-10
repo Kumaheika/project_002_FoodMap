@@ -12,8 +12,7 @@
 先到 google API 申請一個 API憑證，連結網址[GoogleAPIs](https://console.developers.google.com/apis/credentials?project=foodmap-1350)
 ---
 
-<iframe width="722" height="1280" src="https://xd.adobe.com/embed/00f9572c-5ee4-4379-b07a-e877f7f1da0e/" frameborder="0" allowfullscreen></iframe>
-
+{% iframe src="https://xd.adobe.com/embed/00f9572c-5ee4-4379-b07a-e877f7f1da0e/  722 1280 %}
 
 ### API
 - AIzaSyDdDcy6PB-I5_5zhD1M-bIjMiVcuYQ7lqA
